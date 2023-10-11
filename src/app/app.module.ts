@@ -5,10 +5,16 @@ import { AppComponent } from "./app.component";
 import { TopBarComponent } from "./top-bar/top-bar.component";
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
+import { ProfiloComponent } from "./profilo/profilo.component";
 
 @NgModule({
     imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
-    declarations: [AppComponent, TopBarComponent, HomeComponent],
+    declarations: [
+        AppComponent,
+        TopBarComponent,
+        HomeComponent,
+        ProfiloComponent,
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
