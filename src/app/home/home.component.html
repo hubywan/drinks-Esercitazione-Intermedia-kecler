@@ -1,2 +1,18 @@
-HOME
-<a routerLink="/profilo">profilo</a>
+<h1 class="text-center">DRINKS OF KINGS</h1>
+<div class="container">
+    <div routerLink="/dettaglio-drink">
+        <ul class="d-flex flex-direction-row flex-wrap">
+            <li *ngFor="let drink of drinks" class="mx-1 my-3">
+                {{ drink.idDrink | json }}
+                <div class="card text-white bg-dark " style="width: 18rem;">
+                    <img class="card-img-top" alt="Card image cap" [src]="drink.strDrinkThumb">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ drink.strDrink}}</h5>
+                        <!-- <a routerLink="/dettaglio-drink" class="btn btn-secondary">Dettaglio drink</a> -->
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

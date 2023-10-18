@@ -5,9 +5,8 @@ import { AppComponent } from "./app.component";
 import { TopBarComponent } from "./top-bar/top-bar.component";
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
-import { ProfiloComponent } from "./profilo/profilo.component";
 import { HttpClientModule } from "@angular/common/http";
-import { DettaglioLinkComponent } from "./dettaglioDrink/dettaglio-drink.component";
+import { DettaglioDrinkComponent } from "./dettaglioDrink/dettaglio-drink.component";
 
 @NgModule({
     imports: [
@@ -20,8 +19,7 @@ import { DettaglioLinkComponent } from "./dettaglioDrink/dettaglio-drink.compone
         AppComponent,
         TopBarComponent,
         HomeComponent,
-        ProfiloComponent,
-        DettaglioLinkComponent,
+        DettaglioDrinkComponent,
     ],
     bootstrap: [AppComponent],
 })
