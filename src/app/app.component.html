@@ -1,1 +1,10 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+<ul>
+    <li *ngFor="let drink of drinks">
+        {{ drink.idDrink | json }}
+        {{ drink.strDrink | json }}
+        <img width="50px" [src]="drink.strDrinkThumb" alt="">
+    </li>
+
+</ul>

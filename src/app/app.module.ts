@@ -6,9 +6,15 @@ import { TopBarComponent } from "./top-bar/top-bar.component";
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ProfiloComponent } from "./profilo/profilo.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-    imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
+    imports: [
+        BrowserModule,
+        ReactiveFormsModule,
+        AppRoutingModule,
+        HttpClientModule,
+    ],
     declarations: [
         AppComponent,
         TopBarComponent,
