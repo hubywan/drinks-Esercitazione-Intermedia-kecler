@@ -7,6 +7,7 @@ import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ProfiloComponent } from "./profilo/profilo.component";
 import { HttpClientModule } from "@angular/common/http";
+import { DettaglioLinkComponent } from "./dettaglioDrink/dettaglio-drink.component";
 
 @NgModule({
     imports: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from "@angular/common/http";
         TopBarComponent,
         HomeComponent,
         ProfiloComponent,
+        DettaglioLinkComponent,
     ],
     bootstrap: [AppComponent],
 })
