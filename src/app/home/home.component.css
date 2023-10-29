@@ -6,3 +6,7 @@ h1 {
 ul {
     list-style-type: none;
 }
+
+.custom-cursor {
+    cursor: pointer;
+}
