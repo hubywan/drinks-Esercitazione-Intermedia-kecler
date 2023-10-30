@@ -2,7 +2,6 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
-import { TopBarComponent } from "./top-bar/top-bar.component";
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
@@ -15,12 +14,7 @@ import { DettaglioDrinkComponent } from "./dettaglioDrink/dettaglio-drink.compon
         AppRoutingModule,
         HttpClientModule,
     ],
-    declarations: [
-        AppComponent,
-        TopBarComponent,
-        HomeComponent,
-        DettaglioDrinkComponent,
-    ],
+    declarations: [AppComponent, HomeComponent, DettaglioDrinkComponent],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
